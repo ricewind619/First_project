@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sorting Vizualizer</title>
+    
+    
+      <link rel="stylesheet" href="style.css"/>
+      
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="bars_container" id="bars_container">
+            
+          
+          
+          
+        </div> 
+
+            <div class="buttons_container">
+                <button id="randomize_array_btn" onclick="Randomize()">Randomize array</button>
+                <!-- <button id="sort_btn">Sort button </button> -->
+                <select name="Sort Type" id="sort_type">
+                  <option value="bubbleSort"selected>Bubble Sort</option>
+                  <option value="selectionSort" >Selection Sort</option>
+                  <!-- <option value="insertionSort">Insertion Sort</option> -->
+                  <option value="heapSort">Heap Sort</option>
+                  <option value="quickSort">Quick Sort</option>
+                  <option value="mergeSort">Merge Sort</option>
+                </select>
+                <button id="sort_btn" onclick="Sort()">Sort</button>
+
+                <div class="slidecontainer">
+                  <input type="range" min="10" max="30" value="20" id="slider" oninput="update_speed()">
+                  <p>Value of Speed: <span id="speed">Default: 20</span></p>
+                  <input type="range" min="5" max="50" value="25" id="slider_numOfBars" oninput="update_bars()">
+                  <p>Number of bars: <span id="array_size">Default : 25</span></p>
+                </div>
+            </div>
+        
+    </div>
+    
+    <script src="./before final edits index.js"></script>
+  </body>
+
+</html>
